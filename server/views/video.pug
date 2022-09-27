@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  script.
+    const apiKey = '#{apiKey}'
+    const sessionId = '#{sessionID}'
+    const token = '#{token}'
+
+  <script src="https://static.opentok.com/v1/js/video-express.js"></script>
+  <script type="module" src="video.js" defer></script>
+  <title> NeRu Voice/Video Support </title>
+</head>
+
+<body>
+  <header>
+    <h1>Video Call</h1>
+  </header>
+  <section id="previewContainer">
+    <div id="myPreviewVideo"></div>
+    <div id="select-devices">
+      <div>
+        <label for="audio-source-select">Audio Source:</label>
+        <select id="audio-source-select">
+        </select><br />
+        <label for="video-source-select">Video Source:</label>
+        <select id="video-source-select">
+        </select>
+      </div>
+      <div>
+        <button id="previewSelection" type="button">Preview Selection</button><br />
+      </div>
+    </div>
+    <br />
+    <button id="joinRoomButton" disabled>
+      join room
+    </button>
+    <div id="permissionDenied">
+      Please allow access to camera and microphone for demo to work <button id="requestAccess">try again</button>
+    </div>
+  </section>
+  <section id="VEcontainer">
+    <div id="roomContainer"></div>
+    <div id="mySection">
+      <fieldset>
+        <legend>My controls</legend>
+        <div>
+          <button id="videoButton">
+            toggle video
+          </button>
+          <span id="videoStatus"></span>
+        </div>
+        <div>
+          <button id="audioButton">
+            toggle microphone
+          </button>
+          <span id="audioStatus"></span>
+        </div>
+        <div>
+          <button id="layoutButton">
+            toggle layout
+          </button>
+          <span id="layoutStatus">grid</span>
+        </div>
+        <button id="leaveButton">leave</button>
+      </fieldset>
+    </div>
+  </section>
+  <footer>Made with the <a href="https://tokbox.com/developer/multiparty/" target="_blank">Vonage Video Express</a></footer>
+</body>
+
+</html>
