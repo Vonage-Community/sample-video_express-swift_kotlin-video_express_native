@@ -34,3 +34,5 @@ The HTTPS URL for your server is needed for the iOS and Android applications.
 ## iOS and Android Applications
 
 Open the iOS and Android application in Xcode or Android Studio respectively. Replace the `baseUrl` variable in the `AppDelegate.swift` and the `MainActivity.kt`. You can search the projects for `BASE_URL_HERE` to find the exact line. You can now run either application.
+
+![Simulator Screen Recording - iPhone 11 - 2022-09-28 at 11 54 23](https://user-images.githubusercontent.com/15106299/192761805-37d6de9f-7f06-4281-9e80-a266b34f2e59.gif)
